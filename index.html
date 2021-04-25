@@ -18,24 +18,35 @@
 				<img src="img/bit.svg">
 				<h2 class="title">Currency Converter</h2>
 				<div class="form converter">
-				<label>
-					<span>From</span>
-					<input type="text">
-				  </label>
-				  <label>
-					<span>To</span>
-					<input type="text">
-				  </label>
-				  <label>
-					<span>Amount</span>
-					<input type="number">
-				  </label>
-				  
-				  <button type="button" class="submit">Convert</button>
+				<label for ="BaseCurrency">BaseCurrency:</label>
+					<select id="from_currency" class="form-control">
+					<option>Cedis</option>
+					<option>USD</option>
+					<option>Pounds</option>
+					<option>Euro</option>
+					</select>
+					<br><br>
+					<input  type="number"  id="from_amount" class="form-control" id="baseNumber" value=1/>
+			    </div>		
+				<div class="form converter">
+					<label for ="TargetCurrency">TargetCurrency:</label>
+						<select id="to_currency" class="form-control">
+						<option>Cedis</option>
+						<option>USD</option>
+						<option>Pounds</option>
+						<option>Euro</option>
+						</select>
+						<br><br>
+						<input  type="number" class="form-control" id="to_amount" value="1"/> 
+					</div>
+					
+				<label for ="Amount">Amount:</label>
+				<input type="number" id="exchange"/>
 				</div>  
             </form>
         </div>
     </div>
     <script type="text/javascript" src="js/main.js"></script>
+
 </body>
 </html>
